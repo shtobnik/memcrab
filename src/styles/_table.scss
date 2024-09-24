@@ -1,0 +1,79 @@
+@import "variables";
+
+.matrix-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+
+  th,
+  td {
+    border: 1px solid $grey;
+    padding: 8px;
+    text-align: center;
+    position: relative;
+  }
+
+  th {
+    background-color: $grey-light;
+  }
+
+  td {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &.highlighted {
+      background-color: $yellow;
+    }
+
+    &.percentage-mode {
+      color: transparent;
+      position: relative;
+
+      .percentage-text {
+        position: relative;
+        z-index: 2;
+        color: black;
+      }
+
+      &.percent-10 {
+        background-color: $percent-10;
+      }
+
+      &.percent-20 {
+        background-color: $percent-20;
+      }
+
+      &.percent-30 {
+        background-color: $percent-30;
+      }
+
+      &.percent-40 {
+        background-color: $percent-40;
+      }
+
+      &.percent-50 {
+        background-color: $percent-50;
+      }
+
+      &.percent-60 {
+        background-color: $percent-60;
+      }
+
+      &.percent-70 {
+        background-color: $percent-70;
+      }
+
+      &.percent-80 {
+        background-color: $percent-80;
+      }
+
+      &.percent-90 {
+        background-color: $percent-90;
+      }
+
+      &.percent-100 {
+        background-color: $percent-100;
+      }
+    }
+  }
+}
